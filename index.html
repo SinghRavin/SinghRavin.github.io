@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ravi Singh</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: 40px auto;
+      line-height: 1.6;
+      color: #222;
+    }
+
+a {
+    text-decoration: none;
+  }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    nav {
+      margin-bottom: 30px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    nav button {
+      background: none;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    nav button.active {
+      border-bottom: 2px solid #000;
+      font-weight: bold;
+    }
+
+    section {
+      display: none;
+    }
+
+    section.active {
+      display: block;
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+
+    .subsection {
+      margin-top: 20px;
+    }
+
+    footer {
+      margin-top: 60px;
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Ravi Singh</h1>
+
+  <nav>
+    <button class="tab active" data-tab="home">Home</button>
+    <button class="tab" data-tab="research">Research</button>
+    <button class="tab" data-tab="events">Workshops & Conferences</button>
+    <button class="tab" data-tab="interests">Interests</button>
+  </nav>
+
+  <!-- Home -->
+  <section id="home" class="active">
+  <div style="display:flex; gap:30px; align-items:flex-start;">
+
+    <!-- Profile Picture -->
+    <img src="HeadShot.jpeg" alt="Ravi" style="width:180px; border-radius:8px;" />
+
+    <!-- Description -->
+    <div>
+      <p>
+        Hi! I am Ravi, a PhD candidate in the 
+<a href="https://medicine.utah.edu/population-health-sciences/divisions/biostatistics" target="_blank">Division of Biostatistics</a>, 
+<a href="https://medicine.utah.edu/population-health-sciences" target="_blank">Department of Population Health Sciences</a>, at the 
+<a href="https://www.utah.edu/" target="_blank">University of Utah</a>. Before starting my PhD program, I completed my 
+<a href="https://www.bgsu.edu/business/departments-and-programs/applied-statistics-and-operations-research/graduateprograms.html" target="_blank">Masters in Applied Statistics</a> at 
+<a href="https://www.bgsu.edu/" target="_blank">Bowling Green State University</a>. I received my 
+<a href="https://academics.iisertvm.ac.in/programmes#tabs|iisertvm:bsms" target="_blank">dual BS-MS degree</a> in mathematics from the 
+<a href="https://maths.iisertvm.ac.in/" target="_blank">School of Mathematics</a>, 
+<a href="https://www.iisertvm.ac.in/" target="_blank">Indian Institute of Science Education and Research</a>, Thiruvananthapuram, India.
+      </p>
+
+      <p>
+        My current research interest lies in causal inference and applying advanced methods in statistics and machine learning to answer relevant questions in biomedical research. My thesis work focuses on estimating heterogeneous treatment effects using state-of-the-art methods such as the R-learner, targeted maximum likelihood estimation, and risk- and effect-modeling approaches. I apply these methods to randomized controlled trials as well as observational studies using electronic health record data, where the observational analyses are guided by the principles of target trial emulation. I also have a strong passion for teaching.
+      </p>
+
+      <p>
+        You can find me on 
+        <a href="https://github.com/SinghRavin" target="_blank">GitHub</a>, 
+        <a href="https://scholar.google.com/citations?user=tUllbzAAAAAJ&hl=en" target="_blank">Google Scholar</a>, 
+        <a href="https://www.linkedin.com/in/ravinds5851113/" target="_blank">LinkedIn</a>, 
+        or email me at 
+        <a href="mailto:ravinder.singh@utah.edu">ravinder.singh@utah.edu</a>. 
+        A copy of my CV is available <a href="Ravi_Resume__new_.pdf" target="_blank">here</a>.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+  <!-- Research -->
+  <section id="research">
+    <div class="subsection">
+      <h2>Research Publications</h2>
+      <ul>
+        <li>Catherine G Derington, Amara Sarwal, Guo Wei, Sydney E Hartsell, Michael Throolin, <b>Ravinder Singh</b>, McKenna R Nevers, Chong Zhang, Niharika Katkam, Augustine Takyi, Akhil R Chakravartula, Poorvika Babu, Vikrant G Deshmukh, Robert E Boucher, Stavros G Drakos, Tom Greene, Jincheng Shen, Srinivasan Beddhu. <em>Liraglutide vs Semaglutide vs Dulaglutide in Veterans with Type 2 Diabetes. </em>JAMA Network Open, 2025 October.</li> <a href="derington_2025_oi_251028_1759522477.50273.pdf" target="_blank">(Link to article)</a>
+
+	<li>Amara Sarwal, <b>Ravinder Singh</b>, Guo Wei, Jincheng Shen, McKenna Nevers, Sydney E Hartsell, Catherine G Derington, Augustine Takyi, Akhil R Chakravartula, Niharika Katkam, Robert E Boucher, Stavros G Drakos, Tom Greene, Srinivasan Beddhu. <em>Glycemic Therapies and the Risk of Gastrointestinal Adverse Events in Veterans with Type 2 Diabetes. </em>Diabetes, Obesity And Metabolism, 2025 July.</li> <a href="https://dom-pubs.onlinelibrary.wiley.com/doi/epdf/10.1111/dom.16642" target="_blank">(Link to article)</a>
+
+	<li>Lina Brinker, Konstantinos Sideris, Guo Wei, <b>Ravinder Singh</b>, McKenna R Nevers, Sydney E Hartsell, Amara Sarwal, Christos P Kyriakopoulos, Eleni Tseliou, Jan Benes, Vojtech Melenovsky, Stavros G Drakos, Thomas C Hanff, Spencer Carter, James C Fang, Monique Cho, Srinivasan Beddhu, Josef Stehlik. <em>Diabetes Therapy With SGLT2i After Heart Transplant: A Multi-Institutional Analysis. </em>JACC: Heart Failure, 2025 June.</li> <a href="Brinker_SGLT2itherapyafterheartTx_JACCHF2025.pdf" target="_blank">(Link to article)</a>
+
+	<li>Jincheng Shen, Amara Sarwal, <b>Ravinder Singh</b>, Sydney E Hartsell, Guo Wei, McKenna Nevers, Jesse C Christensen, Augustine Takyi, Niharika Katkam, Catherine G Derington, Vikrant G Deshmukh, Robert E Boucher, Stavros G Drakos, Tom Greene, Srinivasan Beddhu. <em>Comparative Effectiveness of Insulin Glargine, Glucagon‐like Peptide‐1 Receptor Agonists and Sodium‐Glucose Cotransporter‐2 Inhibitors in Veterans with Type 2 Diabetes. </em>Diabetes, Obesity And Metabolism, 2025 April.</li> <a href="https://dom-pubs.onlinelibrary.wiley.com/doi/epdf/10.1111/dom.16207" target="_blank">(Link to article)</a>
+
+	<li>Amara Sarwal, Robert E. Boucher, Nikita Abraham, <b>Ravinder Singh</b>, Xiangyang Ye, Farahnaz Moghaddam, Sydney E. Hartsell, Guo Wei, Srinivasan Beddhu. <em>Associations of Hyponatremia with Cognition Function and All-Cause Mortality: Post Hoc Analysis of the Systolic BP Intervention Trial. </em>Kidney360, 2023 October.</li> <a href="associations_of_hyponatremia_with_cognition.7.pdf" target="_blank">(Link to article)</a>
+
+	<li>Trent D. Buskirk, Brian P. Blakely, Adam Eck, Richard McGrath, <b>Ravinder Singh</b> and Youzhi Yu. <em>Sweet Tweets! Evaluating a New Approach for Probability-Based Sampling of Twitter. </em>EPJ Data Science, 2022 February.</li> <a href="sweet_tweets_article.pdf" target="_blank">(Link to article)</a>
+
+	<li>Indravash Chowdhury, <b>Ravinder Singh</b>,  Christopher Kluse and Mohammad Mayyas. <em>The Effect of Obstacle Design Architectures on Randomly Ranging AGVs in a Shared Workspace. </em>Advances in Science, Technology and Engineering Systems Journal, 2021 October.</li> <a href="https://www.astesj.com/publications/ASTESJ_060538.pdf" target="_blank">(Link to article)</a>
+      </ul>
+    </div>
+
+    <div class="subsection">
+      <h2>Publications in Progress</h2>
+      <ul>
+        <li>Sydney E. Hartsell, Guo Wei, <b>Ravinder Singh</b>, Michael Throolin, McKenna R. Nevers, Amara Sarwal, Catherine G. Derington, Christa Curtis, Robert E. Boucher, Jincheng Shen, Stavros Drakos, Tom Greene, Srinivasan Beddhu. <em>Comparative Effectiveness of SGLT2i and GLP-1RA on Kidney and Cardiovascular Outcomes by Kidney Failure Risk. </em>Conditionally accepted at JASN.</li>
+	<li>Sydney E. Hartsell, Catherine G. Derington, <b>Ravinder Singh</b>, Guo Wei, Amara Sarwal, McKenna R. Nevers, Michael Throolin, Ana Mosquera Umbacia, Robert E. Boucher, Jason N. Katz, MD, Terrence Bjordahl, Tahir Zaman, James C. Fang, Alfred K Cheung, Stavros G. Drakos, MD, Tom Greene, Jincheng Shen, Srinivasan Beddhu. <em>Systolic Blood Pressure and Heart Failure Risk with SGLT2 Inhibitors Versus GLP-1 Receptor Agonists in Type 2 Diabetes. </em>Under review at Circulation.</li>
+	<li>Shalini Kasera, Sydney E. Hartsell, Guo Wei, Amara Sarwal, McKenna R. Nevers, <b>Ravinder Singh</b>, Robert Boucher, Stavros G. Drakos, Catherine G. Derington, PharmD, Srinivasan Beddhu. <em>Comparative Effectiveness of Synthetic Glucagon-Like Peptide-1 Receptor Agonists and Sodium-Glucose Cotransporter-2 Inhibitors on Weight Loss by Chronic Kidney Disease in Persons with Type 2 Diabetes. </em> Under review at AJKD.</li>
+	<li>Amara Sarwal, Michael Throolin, Guo Wei, Sydney E. Hartsell, <b>Ravinder Singh</b>, Jincheng Shen, McKenna Nevers, Robert Boucher, Tom Greene, Srinivasan Beddhu. <em>Comparison of common anti-epileptic medications on kidney outcomes and mortality in veterans with type 2 diabetes: valproic acid, lamotrigine, carbamazepine and levetiracetam. </em>In preparation to CJASN.</li>
+      </ul>
+    </div>
+
+    <div class="subsection">
+      <h2>Thesis Work in Progress</h2>
+      <ul>
+        <li><b>Ravinder Singh</b>, Tom Greene, Srinivasan Beddhu, Yizhe Xu. <em>R-Learner Based Estimation of Heterogeneous Treatment Effects of SGLT2i vs GLP-1RA on Cardio-Renal Outcomes in Veterans with Type 2 Diabetes. </em>In preparation.</li>
+	<li><b>Ravinder Singh</b>, Tom Greene, Srinivasan Beddhu, Jincheng Shen. <em>Targeted-Learning Based Estimation of Heterogeneous Treatment Effects of SGLT2i vs GLP-1RA on Heart Failure Outcomes in Veterans with Type 2 Diabetes. </em>In preparation.</li>
+	<li><b>Ravinder Singh</b>, Adam Bress, Tom Greene. <em>Simulation Study to Compare Risk- and Effect- Modeling Approaches for Estimating Individualized Treatment Effects in Randomized Controlled Trials. </em>In preparation.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Workshops & Conferences -->
+  <section id="events">
+    <ul>
+      <li>Attended Symposium on Data Science and Statistics (SDSS), Utah, USA, 2025 April.</li> 
+      <li>Teaching Assistant at <a href="https://uofuhealth.utah.edu/delphi-data-science-initiative" target="_blank">DELPHI</a> Workshop: <a href="https://uofudelphi.github.io/2025-03-31-ml_r/" target="_blank">Machine Learning with R</a>, Utah, USA, 2025 March.</li>
+      <li>Teaching Assistant at <a href="https://uofuhealth.utah.edu/delphi-data-science-initiative" target="_blank">DELPHI</a> Workshop: <a href="https://uofudelphi.github.io/2024-10-29-adv_r/" target="_blank">Advanced R for Data Analysis</a>, Utah, USA, 2024 October.</li>
+      <li>Teaching Assistant at <a href="https://uofuhealth.utah.edu/delphi-data-science-initiative" target="_blank">DELPHI</a> Workshop: <a href="https://uofudelphi.github.io/2024-08-29-Intro_R/" target="_blank">Introduction to R for Data Science</a>, Utah, USA, 2024 August.</li>
+      <li>Attended Joint Statistical Meeting (JSM), Oregon, USA, 2024 August.</li>
+    </ul>
+  </section>
+
+  <!-- Interests -->
+  <section id="interests">
+   <div style="display:flex; gap:40px; flex-wrap:wrap;">
+
+
+   <!-- Badminton -->
+<div style="max-width:250px;">
+<img src="BadmintonShot.jpg" alt="Badminton" style="width:100%; border-radius:8px;" />
+<p>
+<strong>Badminton</strong><br />
+I absolutely love playing badminton!</p>
+</div>
+
+
+<!-- Running -->
+<div style="max-width:250px;">
+<img src="RunningShot.jpg" alt="Running" style="width:100%; border-radius:8px;" />
+<p>
+<strong>Running</strong><br />
+I do run ocassionally, and like to participate in local running events.</p>
+</div>
+
+
+</div>
+</section>
+
+  <footer>
+    © Ravinder (Ravi) Singh
+  </footer>
+
+  <script>
+    const tabs = document.querySelectorAll('.tab');
+    const sections = document.querySelectorAll('section');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        sections.forEach(s => s.classList.remove('active'));
+
+        tab.classList.add('active');
+        document.getElementById(tab.dataset.tab).classList.add('active');
+      });
+    });
+  </script>
