@@ -13,9 +13,9 @@
       color: #222;
     }
 
-a {
-    text-decoration: none;
-  }
+    a {
+      text-decoration: none;
+    }
 
     h1 {
       margin-bottom: 10px;
@@ -60,6 +60,61 @@ a {
       font-size: 14px;
       color: #666;
     }
+
+    /* --- NEW CODE STARTS HERE --- */
+
+    /* These match the classes you added in Step 1 */
+    .profile-container {
+      display: flex; 
+      gap: 30px; 
+      align-items: flex-start;
+    }
+
+    .interests-container {
+      display: flex; 
+      gap: 40px; 
+      flex-wrap: wrap;
+    }
+
+    /* Mobile Responsive Rules */
+    @media (max-width: 600px) {
+      
+      /* 1. Add breathing room on sides */
+      body {
+        margin: 20px;
+      }
+
+      /* 2. Stack profile image on top of text */
+      .profile-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      /* 3. Adjust profile image spacing */
+      .profile-container img {
+        margin-bottom: 20px;
+        width: 150px; 
+      }
+
+      /* 4. Allow navigation tabs to wrap on small screens */
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+      }
+
+      nav button {
+        flex: 1 1 auto;
+        font-size: 14px;
+        padding: 10px 5px;
+      }
+      
+      /* 5. Center interest items */
+      .interests-container {
+        justify-content: center;
+      }
+    }
   </style>
 </head>
 <body>
@@ -75,7 +130,7 @@ a {
 
   <!-- Home -->
   <section id="home" class="active">
-  <div style="display:flex; gap:30px; align-items:flex-start;">
+  <div class="profile-container">
 
     <!-- Profile Picture -->
     <img src="HeadShot.jpeg" alt="Ravi" style="width:180px; border-radius:8px;" />
@@ -166,8 +221,7 @@ a {
 
   <!-- Interests -->
   <section id="interests">
-   <div style="display:flex; gap:40px; flex-wrap:wrap;">
-
+   <div class="interests-container">
 
    <!-- Badminton -->
 <div style="max-width:250px;">
